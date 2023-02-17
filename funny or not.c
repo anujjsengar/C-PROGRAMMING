@@ -9,10 +9,16 @@ int main() {
     int n,b,g,i,d;
     scanf("%d%d%d%d%d",&n,&b,&g,&i,&d);
     if(b*i-g*d>=0){
+        if(b*i-g*d==0){
+            printf("God Knows!");
+        }
+        else{
         printf("Simple Questions");
+        }
     }
     else{
         printf("Funny Questions");
     }
     return 0;
 }
+
