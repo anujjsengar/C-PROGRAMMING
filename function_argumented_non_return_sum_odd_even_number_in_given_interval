@@ -1,0 +1,26 @@
+//write a argumented non return function to find the sum of even and odd number between given interval range
+#include <stdio.h>
+void sum_list(int x, int y);
+int main()
+{
+    int a,b;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    sum_list(a,b);
+    return 0;
+}
+void sum_list(int x, int y){
+    int s1=0;
+    int s2=0;
+    for(int i=x+1;i<y;i++){
+        if(i%2==0){
+            s1=s1+i;
+        }
+        else{
+            s2=s2+i;
+        }
+    }
+       
+    printf("EVEN NUMBER SUM %d \n",s1);
+    printf("ODD NUMBER SUM %d",s2);
+}
